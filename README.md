@@ -31,8 +31,8 @@ Environment:
 | MNN | 9.3 | 0.4306 | 206.52 | 4.84 |
 | NCNN | 9.3 | 0.4371 | **184.24** | **5.43** |
 
-> 推理时间不包含预处理和后处理。测试时设备已安装外部散热以防止降频。
-> Inference time does not include pre/ post-processing. The device was equipped with external cooling to prevent throttling during testing.
+> 推理时间不包含预处理和后处理。测试时设备配备外部散热，运行期间 CPU 温度稳定在30°C左右。
+> Inference time excludes pre/post-processing. The device was equipped with external cooling; CPU temperature remained stable at approximately 30°C throughout the benchmark.
 ---
 
 ## 如何复现 | How to Reproduce
