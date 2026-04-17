@@ -20,6 +20,18 @@ Environment:
 
 ### 详细数据表 | Detailed Data Table
 
+#### 输入尺寸：640 | Image Size: 640
+
+| 格式（部分） \| Format(Partial) | 大小 \| Size (MB) | 指标/mAP50-95(边界框) \| metrics/mAP50-95(B) | 推理时间 \| Inference time (ms/im) | 帧率 \| FPS |
+| :--- | :--- | :--- | :--- | :--- |
+| PyTorch | **5.3** ✨ | 0.4765 | 1331.04 | 0.75 |
+| TorchScript | 9.8 | 0.4734 | 1569.82 | 0.64 |
+| ONNX | 9.5 | 0.4734 | 431.94 | 2.32 |
+| OpenVINO | 9.6 | 0.4734 | **398.5** ✨ | **2.51** ✨ |
+| MNN | 9.4 | 0.4735 | 501.82 | 1.99 |
+| NCNN | 9.4 | **0.4772** ✨ | 406.92 | 2.49 |
+
+
 #### 输入尺寸：416 | Image Size: 416
 
 | 格式（部分） \| Format(Partial) | 大小 \| Size (MB) | 指标/mAP50-95(边界框) \| metrics/mAP50-95(B) | 推理时间 \| Inference time (ms/im) | 帧率 \| FPS |
@@ -30,6 +42,7 @@ Environment:
 | OpenVINO | 9.6 | 0.4306 | 188.16 | 5.31 |
 | MNN | 9.3 | 0.4306 | 206.52 | 4.84 |
 | NCNN | 9.3 | 0.4371 | **184.24** ✨ | **5.43** ✨ |
+
 
 #### 输入尺寸：320 | Image Size: 320
 
@@ -54,6 +67,7 @@ To reproduce the above benchmarks on all export formats, run this code:
 ```Bash
 # 在所有导出格式上对 COCO128 数据集进行 YOLO26n 速度和精度基准测试
 # Benchmark YOLO26n speed and accuracy on the COCO128 dataset for all export formats
+yolo benchmark model=yolo26n.pt data=coco128.yaml imgsz=640
 yolo benchmark model=yolo26n.pt data=coco128.yaml imgsz=416
 yolo benchmark model=yolo26n.pt data=coco128.yaml imgsz=320
 ```
