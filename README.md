@@ -20,8 +20,7 @@ Environment:
 
 ### 详细数据表 | Detailed Data Table
 
-#### 输入尺寸：416
-#### Image Size: 416
+#### 输入尺寸：416 | Image Size: 416
 
 | 格式（部分） \| Format(Partial) | 大小 \| Size (MB) | 指标/mAP50-95(边界框) \| metrics/mAP50-95(B) | 推理时间 \| Inference time (ms/im) | 帧率 \| FPS |
 | :--- | :--- | :--- | :--- | :--- |
@@ -32,8 +31,7 @@ Environment:
 | MNN | 9.3 | 0.4306 | 206.52 | 4.84 |
 | NCNN | 9.3 | 0.4371 | **184.24** ✨ | **5.43** ✨ |
 
-#### 输入尺寸：320
-#### Image Size: 320
+#### 输入尺寸：320 | Image Size: 320
 
 | 格式（部分） \| Format(Partial) | 大小 \| Size (MB) | 指标/mAP50-95(边界框) \| metrics/mAP50-95(B) | 推理时间 \| Inference time (ms/im) | 帧率 \| FPS |
 | :--- | :--- | :--- | :--- | :--- |
