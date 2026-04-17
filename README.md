@@ -52,6 +52,8 @@ Environment:
 To reproduce the above benchmarks on all export formats, run this code:
 
 ```Bash
+# 在所有导出格式上对 COCO128 数据集进行 YOLO26n 速度和精度基准测试
 # Benchmark YOLO26n speed and accuracy on the COCO128 dataset for all export formats
 yolo benchmark model=yolo26n.pt data=coco128.yaml imgsz=416
+yolo benchmark model=yolo26n.pt data=coco128.yaml imgsz=320
 ```
