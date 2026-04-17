@@ -37,11 +37,12 @@ Environment:
 
 | 格式（部分） \| Format(Partial) | 大小 \| Size (MB) | 指标/mAP50-95(边界框) \| metrics/mAP50-95(B) | 推理时间 \| Inference time (ms/im) | 帧率 \| FPS |
 | :--- | :--- | :--- | :--- | :--- |
-| TorchScript | 9.7 | 0.3834 | 437.2 | 2.29 |
-| ONNX | 9.4 | 0.3834 | 130.94 | 7.64 |
-| OpenVINO | 9.6 | 0.3834 | **121.73** ✨ | **8.21** ✨ |
-| MNN | 9.3 | 0.3832 | 124.61 | 8.02 |
-| NCNN | 9.3 | **0.3861** | 121.87 | 8.21 |
+| PyTorch | **5.3** ✨ | **0.3886** ✨ | 437.13 | 2.29 |
+| TorchScript | 9.7 | 0.3834 | 445.04 | 2.25 |
+| ONNX | 9.4 | 0.3834 | 130.4 | 7.67 |
+| OpenVINO | 9.6 | 0.3834 | 121.73 | 8.21 |
+| MNN | 9.3 | 0.3832 | 124.58 | 8.03 |
+| NCNN | 9.3 | 0.3861 | **121.61** ✨ | **8.22** ✨ |
 
 > 推理时间不包含预处理和后处理。测试时设备配备外部散热，运行期间 CPU 温度稳定在30°C左右。
 > Inference time excludes pre/post-processing. The device was equipped with external cooling; CPU temperature remained stable at approximately 30°C throughout the benchmark.
